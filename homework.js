@@ -8,7 +8,7 @@
 
 function remove(arr, item) {
     let newarray = [];
-    for (let i = 0; i < arr.length;) {
+    for (let i = 0; i < arr.length; i++) {
         if (arr[i] !== item) {
             newarray.push(arr[i])
             i++;
@@ -17,8 +17,6 @@ function remove(arr, item) {
     return newarray;
 
 }
-
-console.log("number 1 works")
 
 // function remove(names, name) {
 //     while {
@@ -37,23 +35,37 @@ console.log("number 1 works")
 
 function remove(arr, item) {
     let newarray = [];
-    for (let i = 0; i < arr.length;) {
+    for (let i = 0; i < arr.length; i++) {
         if (arr[i] !== item) {
             newarray.push(arr[i])
             i++;
         } else i++
     }
     return newarray;
-}
 
+}
 
 
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
 
-function sum(arr) {
-    return arr.reduce(function(a, b) {
-        return a + b
+// function sum(arr) {
+//     return arr.reduce(function(a, b) {
+//         return a + b
+//     }, 0);
+// }
+
+// function sum(numbers) {
+//     let sum = 0
+//     for (let number of numbers) {
+//         sum += number
+//     }
+//     return numbers
+// }
+
+function sum(numbers) {
+    return numbers.reduce(function(a, b) {
+        return a + b;
     }, 0);
 }
 
@@ -70,7 +82,6 @@ function average(arr) {
         }
     }
 }
-
 
 
 
