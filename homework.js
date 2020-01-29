@@ -6,17 +6,29 @@
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
 
-function remove(arr, item) {
-    let newarray = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] !== item) {
-            newarray.push(arr[i])
-            i++;
-        } else i++
-    }
-    return newarray;
 
+function remove(members, potentialMember) {
+    let newArray = members.slice()
+    for (let i = 0; i < newArray.length; i++) {
+        if (potentialMember === = newArray[i]) {
+            newArray.splice(i, 1)
+        }
+    }
+    console.log(newArray, potentialMember)
+    return newArray
 }
+
+// function remove(arr, item) {
+//     let newarray = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] !== item) {
+//             newarray.push(arr[i])
+//             i++;
+//         } else i++
+//     }
+//     return newarray;
+
+
 
 // function remove(names, name) {
 //     while {
@@ -33,21 +45,55 @@ function remove(arr, item) {
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
 
-function remove(arr, item) {
-    let newarray = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] !== item) {
-            newarray.push(arr[i])
-            i++;
-        } else i++
-    }
-    return newarray;
+// function remove(arr, item) {
+//     let newarray = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] !== item) {
+//             newarray.push(arr[i])
+//             i++;
+//         } else i++
+//     }
+//     return newarray;
 
+// }
+
+function remove(members, potentialMember) {
+    let newArray = members.slice()
+    for (let i = 0; i < newArray.length; i++) {
+        if (potentialMember === = newArray[i]) {
+            newArray.splice(i, 1)
+        }
+    }
+    console.log(newArray, potentialMember)
+    return newArray
 }
 
 
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
+
+
+
+
+
+function sum(numbers) {
+    return numbers.reduce(function(a, b) {
+        return a + b;
+    }, 0);
+}
+
+
+// let numbers = [43, 1000, 72, 29, 56, 398]
+// let sumOfNumbers = []
+
+// function sum(numbers) {
+//     let sum = 0
+//     for (let number of numbers) {
+//         sumOfNumbers.push(sum += number)
+//     }
+//     return sumOfNumbers
+// }
+
 
 // function sum(arr) {
 //     return arr.reduce(function(a, b) {
@@ -63,16 +109,15 @@ function remove(arr, item) {
 //     return numbers
 // }
 
-function sum(numbers) {
-    return numbers.reduce(function(a, b) {
-        return a + b;
-    }, 0);
-}
 
 
 
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
+
+// function average(numbers) {
+//     return numbers.reduce((a, b) => (a + b)) / numbers.length;
+// }
 
 
 function average(arr) {
@@ -85,16 +130,10 @@ function average(arr) {
 
 
 
-// function average(numbers) {
-//     return numbers.reduce((a, b) => (a + b)) / numbers.length;
-// }
-
-
-
-
-
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
+
+function minimum()
 
 
 
